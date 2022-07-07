@@ -1,7 +1,7 @@
 package mylog
 
 import (
-	 mylogger "mylog/mylog"
+	 mylogger "mylog/log/mylog"
 	"testing"
 )
 
