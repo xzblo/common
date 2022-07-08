@@ -1,13 +1,13 @@
 package mylog
 
 import (
-	 mylogger "mylog/log/mylog"
+	 mylogger "github.com/xzblo/common/log/mylog"
 	"testing"
 )
 
 
 func TestNewFileLogger(t *testing.T){
-	fileLog := mylogger.NewFileLogger("debug", "./", "test", 2*1024*1024) // 向文件打印
+	fileLog := mylogger.NewFileLogger("debug", "./", "test", 5*1024*1024) // 向文件打印
 	consoleLog := mylogger.NewConsoleLogger("FATAL")
 
 	for {
